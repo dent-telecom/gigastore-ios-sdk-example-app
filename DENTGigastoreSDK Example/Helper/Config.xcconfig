@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  DENTGigastoreSDK example
+//
+//  Created by Christian Trümper on 26.05.21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+determineRevisionNumber = 0 // set to 1 if the GIT revision number should be put to plist, otherwise leave as 0
+
+BUILD_NUMBER = 1
