@@ -12,7 +12,8 @@
 		0F565BC52948A2B50071AFFA /* InputViewWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F565BC42948A2B50071AFFA /* InputViewWithButton.swift */; };
 		0F565BC72948A3390071AFFA /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F565BC62948A3390071AFFA /* VersionView.swift */; };
 		0F565BC9294B50660071AFFA /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F565BC8294B50660071AFFA /* Style.swift */; };
-		0F68A24429506AC00021938A /* DENTGigastoreSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0F68A24329506AC00021938A /* DENTGigastoreSDK */; };
+		995B32982B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995B32972B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework */; };
+		995B32992B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 995B32972B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99ECE443269C7B80004820BA /* DENTGigastoreSDK_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE442269C7B80004820BA /* DENTGigastoreSDK_ExampleApp.swift */; };
 		99ECE445269C7B80004820BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE444269C7B80004820BA /* MainView.swift */; };
 		99ECE447269C7B82004820BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99ECE446269C7B82004820BA /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				995B32992B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +67,7 @@
 		0F565BC42948A2B50071AFFA /* InputViewWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewWithButton.swift; sourceTree = "<group>"; };
 		0F565BC62948A3390071AFFA /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
 		0F565BC8294B50660071AFFA /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		995B32972B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DENTGigastoreSDK.xcframework; sourceTree = "<group>"; };
 		99ECE43F269C7B80004820BA /* DENTGigastoreSDK Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DENTGigastoreSDK Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99ECE442269C7B80004820BA /* DENTGigastoreSDK_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DENTGigastoreSDK_ExampleApp.swift; sourceTree = "<group>"; };
 		99ECE444269C7B80004820BA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -93,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F68A24429506AC00021938A /* DENTGigastoreSDK in Frameworks */,
+				995B32982B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +192,7 @@
 		99ECE4EC269D8794004820BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				995B32972B5E6B54001D73A9 /* DENTGigastoreSDK.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -246,7 +250,6 @@
 			);
 			name = "DENTGigastoreSDK Example";
 			packageProductDependencies = (
-				0F68A24329506AC00021938A /* DENTGigastoreSDK */,
 			);
 			productName = "DENTGigastoreSDK Example";
 			productReference = 99ECE43F269C7B80004820BA /* DENTGigastoreSDK Example.app */;
@@ -320,7 +323,6 @@
 			);
 			mainGroup = 99ECE436269C7B80004820BA;
 			packageReferences = (
-				0F68A24229506AC00021938A /* XCRemoteSwiftPackageReference "gigastore-ios-sdk" */,
 			);
 			productRefGroup = 99ECE440269C7B80004820BA /* Products */;
 			projectDirPath = "";
@@ -395,7 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${BUILD_DIR%Build/*}SourcePackages/checkouts/gigastore-ios-sdk/DENTGigastoreSDK.xcframework/Scripts/Run.sh\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\" \"${PROJECT_DIR}/DENTGigastoreSDK Example/DENTGigastoreSDK Example.entitlements\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${PROJECT_DIR}/Frameworks/DENTGigastoreSDK.xcframework/Scripts/Run.sh\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\" \"${PROJECT_DIR}/DENTGigastoreSDK Example/DENTGigastoreSDK Example.entitlements\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -580,6 +582,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DENTGigastoreSDK Example/Preview Content\"";
 				DEVELOPMENT_TEAM = G9PYK2LP94;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LT7642863S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "DENTGigastoreSDK Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -588,9 +591,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk.example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Gigastore SDK Example App - AdHoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -607,6 +611,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DENTGigastoreSDK Example/Preview Content\"";
 				DEVELOPMENT_TEAM = G9PYK2LP94;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LT7642863S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "DENTGigastoreSDK Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -615,9 +620,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk.example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Gigastore SDK Example App - AdHoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -747,25 +753,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0F68A24229506AC00021938A /* XCRemoteSwiftPackageReference "gigastore-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dentwireless/gigastore-ios-sdk";
-			requirement = {
-				kind = exactVersion;
-				version = "1.0.1-pre-release";
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0F68A24329506AC00021938A /* DENTGigastoreSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0F68A24229506AC00021938A /* XCRemoteSwiftPackageReference "gigastore-ios-sdk" */;
-			productName = DENTGigastoreSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99ECE437269C7B80004820BA /* Project object */;
 }

@@ -14,16 +14,24 @@ struct SetSDKKeyView: View {
     
     @State var sdkKey: String = ""
     @State var sdkKeySet: Bool = false
+    @State var isTestMode: Bool = false
     
     // MARK: - Body
 
     var body: some View {
         VStack {
+            Toggle(isOn: $isTestMode) {
+                Text("TestMode")
+                    .font(.headline)
+            }
+            .toggleStyle(SwitchToggleStyle(tint: Color.blue))
+            .padding(.bottom, 12)
+            
             InputViewWithButton(title: "SDK Key",
                                 buttonTitle: "Set SDK Key",
                                 inputText: $sdkKey,
                                 isButtonEnabled: !sdkKey.isEmpty) {
-                ​Gigastore.load(withSDKKey: self.sdkKey)
+                ​Gigastore.load(withSDKKey: self.sdkKey, testMode: self.isTestMode)
                 sdkKeySet = true
             }.padding(.bottom, 4)
             
