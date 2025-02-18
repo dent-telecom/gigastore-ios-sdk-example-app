@@ -17,10 +17,14 @@ struct MainView: View {
     @State private var metatagValue: String = "foo_tag"
     
     @State private var userTokenValue: String = "foo_token"
+    @State private var profileUidValue: String = ""
+    
     @State var isEsimCapable = false
     
     @State var loading: Bool = false
+    
     @State var profile: GigastoreESIMProfile?
+    @State private var isNavigating = false
     
     var isPresentingAlert: Binding<Bool> {
         return Binding<Bool>(get: {
@@ -40,6 +44,23 @@ struct MainView: View {
             ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false, content: {
                 VStack(alignment: .leading, spacing: StyleConstants.Spacing.l) {
                     DeviceInformationView(isEsimCapable: isEsimCapable)
+                    
+                    DividerView()
+                    
+                    LoadProfileView(isNavigating: $isNavigating,
+                                    profileUidValue: $profileUidValue,
+                                    loading: $loading,
+                                    profile: $profile,
+                                    activeError: $activeError,
+                                    isEsimCapable: isEsimCapable)
+                    
+                    NavigationLink(
+                        destination: ProfileView(profile: profile,
+                                                loading: $loading,
+                                                activeError: $activeError),
+                        isActive: $isNavigating
+                    ) { }.hidden()
+
                     
                     DividerView()
                     
@@ -147,6 +168,47 @@ fileprivate struct ActivateItemView: View {
                     
                     if let _profile = profile {
                         self.profile = _profile
+                    }
+                    
+                    if error != nil {
+                        self.activeError = error
+                    }
+                })
+            }
+        }
+    }
+}
+
+fileprivate struct LoadProfileView: View {
+    
+    // MARK: - Properties
+    
+    @Binding var isNavigating: Bool
+    @Binding var profileUidValue: String
+    @Binding var loading: Bool
+    
+    @Binding var profile: GigastoreESIMProfile?
+    @Binding var activeError: Error?
+    var isEsimCapable: Bool
+    
+    // MARK: - Body
+       
+    var body: some View {
+        VStack(alignment: .leading) {
+            HeadlineView("Get Profile")
+            
+            InputViewWithButton(title: "Profile UID",
+                                buttonTitle: "Load profile",
+                                inputText: $profileUidValue) {
+                self.loading = true
+                                
+                ​Gigastore.getProfile(profileUID: self.profileUidValue,
+                                      completion: { (profile, error) -> Void in
+                    self.loading = false
+                                        
+                    if let _profile = profile {
+                        self.profile = _profile
+                        self.isNavigating = true
                     }
                     
                     if error != nil {

@@ -28,6 +28,7 @@
 		99ECE503269DA4DB004820BA /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE502269DA4DB004820BA /* ErrorHelper.swift */; };
 		A4B4BC0C2D647303000ACDDA /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B4BC0B2D647303000ACDDA /* DENTGigastoreSDK.xcframework */; };
 		A4B4BC0D2D647303000ACDDA /* DENTGigastoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4B4BC0B2D647303000ACDDA /* DENTGigastoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4B4BC102D648D21000ACDDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		99ECE502269DA4DB004820BA /* ErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
 		99ECE505269DABED004820BA /* DENTGigastoreSDK Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DENTGigastoreSDK Example.entitlements"; sourceTree = "<group>"; };
 		A4B4BC0B2D647303000ACDDA /* DENTGigastoreSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DENTGigastoreSDK.xcframework; path = "DENTGigastoreSDK Library/Reference/DENTGigastoreSDK.xcframework"; sourceTree = SOURCE_ROOT; };
+		A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				99ECE500269DA276004820BA /* LabelTextFieldView.swift */,
 				0F565BC12948A2540071AFFA /* SetSDKKeyView.swift */,
 				0F565BC8294B50660071AFFA /* Style.swift */,
+				A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				0F565BC52948A2B50071AFFA /* InputViewWithButton.swift in Sources */,
 				0F565BC9294B50660071AFFA /* Style.swift in Sources */,
 				99ECE443269C7B80004820BA /* DENTGigastoreSDK_ExampleApp.swift in Sources */,
+				A4B4BC102D648D21000ACDDA /* ProfileView.swift in Sources */,
 				0F565BC22948A2540071AFFA /* SetSDKKeyView.swift in Sources */,
 				99ECE4F2269DA01A004820BA /* LoadingView.swift in Sources */,
 				99ECE4FC269DA10E004820BA /* AllProfilesView.swift in Sources */,
