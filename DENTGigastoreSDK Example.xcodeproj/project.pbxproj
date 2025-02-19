@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		99ECE4FF269DA11B004820BA /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE4FE269DA11B004820BA /* ProfileRow.swift */; };
 		99ECE501269DA276004820BA /* LabelTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE500269DA276004820BA /* LabelTextFieldView.swift */; };
 		99ECE503269DA4DB004820BA /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE502269DA4DB004820BA /* ErrorHelper.swift */; };
+		A4B4BC102D648D21000ACDDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		99ECE500269DA276004820BA /* LabelTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTextFieldView.swift; sourceTree = "<group>"; };
 		99ECE502269DA4DB004820BA /* ErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
 		99ECE505269DABED004820BA /* DENTGigastoreSDK Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DENTGigastoreSDK Example.entitlements"; sourceTree = "<group>"; };
+		A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				99ECE500269DA276004820BA /* LabelTextFieldView.swift */,
 				0F565BC12948A2540071AFFA /* SetSDKKeyView.swift */,
 				0F565BC8294B50660071AFFA /* Style.swift */,
+				A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				0F565BC52948A2B50071AFFA /* InputViewWithButton.swift in Sources */,
 				0F565BC9294B50660071AFFA /* Style.swift in Sources */,
 				99ECE443269C7B80004820BA /* DENTGigastoreSDK_ExampleApp.swift in Sources */,
+				A4B4BC102D648D21000ACDDA /* ProfileView.swift in Sources */,
 				0F565BC22948A2540071AFFA /* SetSDKKeyView.swift in Sources */,
 				99ECE4F2269DA01A004820BA /* LoadingView.swift in Sources */,
 				99ECE4FC269DA10E004820BA /* AllProfilesView.swift in Sources */,
@@ -587,7 +591,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
@@ -614,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
