@@ -583,7 +583,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DENTGigastoreSDK Example/Preview Content\"";
-				DEVELOPMENT_TEAM = G9PYK2LP94;
+				DEVELOPMENT_TEAM = 4CLHZQ4WG4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "DENTGigastoreSDK Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -592,7 +592,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.denttelecom.gigastore-sdk.example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
 				SWIFT_VERSION = 5.0;
@@ -610,7 +610,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DENTGigastoreSDK Example/Preview Content\"";
-				DEVELOPMENT_TEAM = G9PYK2LP94;
+				DEVELOPMENT_TEAM = 4CLHZQ4WG4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "DENTGigastoreSDK Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -619,7 +619,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dentwireless.gigastore-sdk-sample.staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.denttelecom.gigastore-sdk.example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DENT_Gigastore_SDK_Sample_Staging_Adhoc;
 				SWIFT_VERSION = 5.0;
@@ -755,10 +755,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		0F68A24229506AC00021938A /* XCRemoteSwiftPackageReference "gigastore-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dentwireless/gigastore-ios-sdk";
+			repositoryURL = "https://github.com/dent-telecom/gigastore-ios-sdk";
 			requirement = {
 				kind = exactVersion;
-				version = "1.0.1-pre-release";
+				version = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

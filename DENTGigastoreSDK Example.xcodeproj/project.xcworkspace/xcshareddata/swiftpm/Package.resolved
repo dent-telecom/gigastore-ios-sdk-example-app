@@ -3,7 +3,7 @@
     {
       "identity" : "gigastore-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dentwireless/gigastore-ios-sdk",
+      "location" : "https://github.com/dent-telecom/gigastore-ios-sdk",
       "state" : {
         "revision" : "aa9dcfa726561616b5b0acfe3892bd55cf75dab7",
         "version" : "1.0.1-pre-release"
