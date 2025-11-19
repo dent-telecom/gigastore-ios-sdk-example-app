@@ -1,14 +1,15 @@
 {
+  "originHash" : "93fe7e71766377c39b493e31157cb9cfbd5fb0424cb9cc328d43f4648ed6fc1b",
   "pins" : [
     {
       "identity" : "gigastore-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dent-telecom/gigastore-ios-sdk",
       "state" : {
-        "revision" : "aa9dcfa726561616b5b0acfe3892bd55cf75dab7",
-        "version" : "1.0.1-pre-release"
+        "revision" : "57fce4f634363dcc248dbb223218241d10e423b8",
+        "version" : "1.2.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
