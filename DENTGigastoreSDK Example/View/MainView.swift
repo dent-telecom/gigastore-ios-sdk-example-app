@@ -19,7 +19,7 @@ struct MainView: View {
     @State private var userTokenValue: String = "foo_token"
     @State private var profileUidValue: String = ""
     
-    @State var isEsimCapable = false
+    @State var isEsimCapable: Bool? = nil
     
     @State var loading: Bool = false
     
@@ -121,7 +121,7 @@ fileprivate struct DeviceInformationView: View {
     
     // MARK: - Properties
     
-    var isEsimCapable: Bool
+    var isEsimCapable: Bool?
     
     // MARK: - Body
     
@@ -129,10 +129,22 @@ fileprivate struct DeviceInformationView: View {
         VStack(alignment: .leading) {
             HeadlineView("eSIM Capability")
             
-            Text("eSIM capable: \(self.isEsimCapable == true ? "Yes": "No")")
+            Text(esimCapabilityText)
                 .multilineTextAlignment(.leading)
                 .padding(.bottom, 8)
         }
+    }
+    
+    // MARK: - Helpers
+ 
+    private var esimCapabilityText: String {
+        let status: String
+        if let isCapable = isEsimCapable {
+            status = isCapable ? "Yes" : "No"
+        } else {
+            status = "Determining..."
+        }
+        return "eSIM capable: \(status)"
     }
 }
 
@@ -146,7 +158,7 @@ fileprivate struct ActivateItemView: View {
     
     @Binding var profile: GigastoreESIMProfile?
     @Binding var activeError: Error?
-    var isEsimCapable: Bool
+    var isEsimCapable: Bool?
     
     // MARK: - Body
     
@@ -189,7 +201,7 @@ fileprivate struct LoadProfileView: View {
     
     @Binding var profile: GigastoreESIMProfile?
     @Binding var activeError: Error?
-    var isEsimCapable: Bool
+    var isEsimCapable: Bool?
     
     // MARK: - Body
        
