@@ -27,9 +27,10 @@
 		99ECE501269DA276004820BA /* LabelTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE500269DA276004820BA /* LabelTextFieldView.swift */; };
 		99ECE503269DA4DB004820BA /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ECE502269DA4DB004820BA /* ErrorHelper.swift */; };
 		A4B4BC102D648D21000ACDDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4BC0F2D648D21000ACDDA /* ProfileView.swift */; };
-		AF6172A92F39D7D70077D667 /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6172A82F39D7D70077D667 /* DENTGigastoreSDK.xcframework */; };
 		AF6172AA2F39D7D70077D667 /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6172A82F39D7D70077D667 /* DENTGigastoreSDK.xcframework */; };
 		AF6172AB2F39D7D70077D667 /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6172A82F39D7D70077D667 /* DENTGigastoreSDK.xcframework */; };
+		AF6172AC2F39E5220077D667 /* DENTGigastoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6172A82F39D7D70077D667 /* DENTGigastoreSDK.xcframework */; };
+		AF6172AD2F39E5220077D667 /* DENTGigastoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6172A82F39D7D70077D667 /* DENTGigastoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AF6172AD2F39E5220077D667 /* DENTGigastoreSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6172A92F39D7D70077D667 /* DENTGigastoreSDK.xcframework in Frameworks */,
+				AF6172AC2F39E5220077D667 /* DENTGigastoreSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +404,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${PROJECT_DIR}/Frameworks/DENTGigastoreSDK.xcframework/Scripts/Run.sh\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\" \"${PROJECT_DIR}/DENTGigastoreSDK Example/DENTGigastoreSDK Example.entitlements\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# \"${PROJECT_DIR}/Frameworks/DENTGigastoreSDK.xcframework/Scripts/Run.sh\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\" \"${PROJECT_DIR}/DENTGigastoreSDK Example/DENTGigastoreSDK Example.entitlements\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
